@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ConditionalSection from './Sections/Conditional.js'; 
 
 // function Hello(props) {
 
@@ -34,8 +35,6 @@ class Contador extends Component {
   }
 }
 
-
-
 function App() {
   return (
     <div className="App">
@@ -50,6 +49,7 @@ function App() {
             isActivated={false}
           />
           <Contador  ></Contador>
+          <ConditionalSection></ConditionalSection>
         </p>
       </header>
     </div>
