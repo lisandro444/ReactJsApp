@@ -24,10 +24,11 @@ function Text(props) {
 }
 
 class Contador extends Component {
-  constructor() {
-    super();
-    this.state = { contador: 1 };
-  }
+  // constructor() {
+  //   super();
+  //   this.state = { contador: 1 };
+  // }
+  state = {contador: 0};
   render() {
     return <p>{this.state.contador}</p>
   }
