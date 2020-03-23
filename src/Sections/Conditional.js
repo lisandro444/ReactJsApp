@@ -20,18 +20,19 @@ class ComponentB extends Component {
     }
 }
 
-function useConditinalRender(mostrarA) {
-    if (mostrarA)
-        return <ComponentA></ComponentA>
-    else
-        return <ComponentB></ComponentB>
-}
+// function useConditinalRender(mostrarA) {
+//     if (mostrarA)
+//         return <ComponentA></ComponentA>
+//     else
+//         return <ComponentB></ComponentB>
+// }
 
 export default class ConditonalSection extends Component {
     state = { mostrarA: true }
     render() {
+        const conditionalrender = this.state.mostrarA ? <ComponentA></ComponentA> : <ComponentB></ComponentB>
         return <div>
-            {useConditinalRender(this.state.mostrarA)}
+            {conditionalrender}
         </div>
     }
 }
